@@ -34,7 +34,7 @@
 .container:after{
 	clear: both;
 }
-.one-half, .one-third, .one-fourth{
+.one-half, .one-third, .one-fourth, .one-fifth{
 	width:96%;
 	float:left;
 	position: relative;
@@ -66,6 +66,15 @@
 	}
 }
 
+/* CP 30 Assignment - XL Media Query */
+@media (min-width: 2400px){
+	.container {
+		width: 2340px;
+	}
+	.one-fifth {
+		width:16%;
+	}
+}
 
 /* HEADER */
 header {
@@ -107,17 +116,21 @@ header .hero {
 	display: block;
 	position: relative;
 }
+/* CP 30 Assignment - Text elements within the hero section 
+-- start from 48px font size, I converted it in vw relative
+to container width 1170.*/
 header .hero h1 {
-	font-size:48px;
+	font-size: 4.1vw/*48px*/; 
 	font-weight: normal;
 	margin: 95px 0 0;
 }
 header .hero p {
-	font-size: 22px;
-	line-height: 26px;
+	font-size: 1.88vw/*22px*/; 
+	line-height: 2.22vw/*26px*/;
 	font-weight: 100;
 	margin:10px 0 40px;
 }
+/* END OF CP 30 Assignment - Text elements within the hero section */
 header .hero img {
 	display: block;
 	margin: 3em auto 0;
