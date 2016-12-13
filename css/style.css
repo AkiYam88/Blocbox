@@ -267,8 +267,11 @@
 
 /* TESTIMONIALS */
 	.testimonials{
-		padding: 2em 0 26em/*4em 0*/;
+		padding: 2em 0 /*4em 0*/;
 		text-align: center;
+		/*border: solid;
+		margin-bottom: 20em;*/
+
 	}
 	.testimonials h2{
 		color: #3498DB;
@@ -305,7 +308,7 @@
 		border-radius: 50%;
 		float: left;
 		display: inline-block;
-		margin: 20px 10px 0 0;
+		margin: 20px 10px 5em 0;
 	}
 	.testimonials p.name{
 		float: left;
@@ -324,6 +327,7 @@ footer {
 	height: 150px;
 	position: relative;
 	z-index: 0;
+	margin-top: 25em;
  }
 footer p, footer nav ul {
    font-size:14px;
