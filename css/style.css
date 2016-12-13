@@ -453,6 +453,9 @@ footer nav ul li {
    margin-top:8px;
  }
  /* CONTENT ROWS*/
+ /* After hand coded, I checked line by line, and couldnt find anything obvious 
+ and and for just in case, I cut and pasted the tutorial codes to eliminate any typos etc.
+ Content item is still acting up*/
  .content {
    padding:6em 1% 1.5em;
    float:right;
