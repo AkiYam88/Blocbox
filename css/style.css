@@ -19,6 +19,7 @@
    font-weight: 100;
  }
 
+
 /* GRID */
 	.container{
 	margin-right: auto;
@@ -418,6 +419,13 @@ footer nav ul li {
    text-align: center;
    margin-right:8px;
  }
+ .left-nav .items a:active{
+ 	color: red;
+ }
+ /*CP34 ASSIGNMENT*/
+.current-page{
+ 	background-color: #3498EE;
+ }
 
 /* LEFT NAV BAR SETTINGS */
 
@@ -452,30 +460,32 @@ footer nav ul li {
    margin-right:10px;
    margin-top:8px;
  }
- /* CONTENT ROWS*/
- /* After hand coded, I checked line by line, and couldnt find anything obvious 
- and and for just in case, I cut and pasted the tutorial codes to eliminate any typos etc.
- Content item is still acting up*/
  .content {
-   padding:6em 1% 1.5em;
+   padding:0em 1% 1.5em;
    float:right;
    width:98%;
    position: relative;
  }
- .content .header {
-   margin:0 1% 20px;
+.content .container-top{/*not in default*/
+ 	margin-bottom: 6em; 
  }
- .content .header h1 {
+ .container-second{ /*not in default*/
+ 	margin-top: 6.5em;
+ }
+ .content .header {
+   margin:0 1% 0px;
+ }
+  .content .header h1 {
    font-family: "Lato", Helvetica, Arial, sans-serif;
    font-weight: 100;
-   margin:0 0 30px;
+   margin:0 0 60px;
    font-size: 36px;
    color: #3498DB;
    line-height: 44px;
    float: left;
    display:inline-block;
  }
- .content .header > a {
+  .content .header > a {
    float:right;
  }
  .content-item {
