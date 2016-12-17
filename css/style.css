@@ -167,6 +167,7 @@
 	text-align: center;
 	display: block;
 	position: relative;
+	overflow: auto;
 	}
 	.benefits ul{
 	margin: 0 auto;
@@ -269,6 +270,7 @@
 	.testimonials{
 		padding: 2em 0 /*4em 0*/;
 		text-align: center;
+		overflow: auto;
 		/*border: solid;
 		margin-bottom: 20em;*/
 
@@ -327,7 +329,7 @@ footer {
 	height: 150px;
 	position: relative;
 	z-index: 0;
-	margin-top: 25em;
+	margin-top: 0em;
  }
 footer p, footer nav ul {
    font-size:14px;
@@ -347,7 +349,7 @@ footer nav ul li {
    background-color: transparent;
  }
  footer .logo{
-   padding: 2.35em 0;
+   /*padding: 2.35em 0;*/
    margin: 0 auto;
    display: block;
  }
@@ -373,6 +375,48 @@ footer nav ul li {
 /* DASHBOARD */
  .dashboard {
    background:#F7F7F7;
+ }
+ .left-nav {
+ 	height: 100vh;
+ 	width: 220px;
+ 	color: #FFFFFF;
+ 	background: #34495E;
+ 	background-image: linear-gradient(206deg, #5F81A3 0%, #34495E 94%);
+ 	float: left;
+ 	position: absolute;
+ 	-webkit-transition: all 0.3s ease-in-out;
+   	-moz-transition: all 0.3s ease-in-out;
+   	-o-transition: all 0.3s ease-in-out;
+   	transition: all 0.3s ease-in-out;
+   	transform: translate(-220px,0);
+     -webkit-transform: translate(-220px,0); /** Chrome & Safari **/
+     -o-transform: translate(-220px,0); /** Opera **/
+     -moz-transform: translate(-220px,0); /** Firefox **/
+ }
+ .left-nav.open{
+ 	display:block;
+  	width:220px;
+  	-webkit-transition: all 0.3s ease-in-out;
+   	-moz-transition: all 0.3s ease-in-out;
+   	-o-transition: all 0.3s ease-in-out;
+   	transition: all 0.3s ease-in-out;
+   	transform: translate(0,0);
+     -webkit-transform: translate(0,0); /** Chrome & Safari **/
+     -o-transform: translate(0,0); /** Opera **/
+     -moz-transform: translate(0,0); /** Firefox **/
+     z-index: 100;
+ }
+ .hamburger {
+   position:absolute;
+   z-index: 1000;
+   background:#34495E;
+   color:#FFF;
+   text-decoration: none;
+   font-size: 22px;
+   padding: 10px 15px;
+   border-radius: 4px;
+   left: 5px;
+   top: 15px;
  }
  .left-nav {
    height: 100vh;
@@ -466,10 +510,11 @@ footer nav ul li {
    position: relative;
  }
 .content .container-top{/*not in default*/
- 	margin-bottom: 6em; 
+ 	margin-bottom: 0em; 
  }
  .container-second{ /*not in default*/
- 	margin-top: 6.5em;
+ 	margin-top: 0em;
+ 	clear: both;
  }
  .content .header {
    margin:0 1% 0px;
@@ -535,51 +580,74 @@ footer nav ul li {
  }
  /*LAPTOPS & DESKTOPS*/
  @media (min-width:992px) {
-   .content {
+	.left-nav {
+		height: 100vh;
+		width: 14.66666667%;
+		color: #FFFFFF;
+		background: #34495E;
+		background-image: linear-gradient(206deg, #5F81A3 0%, #34495E 94%);
+		float: left;
+		position:fixed;
+		display:block;
+		transform:translate(0,0);/**Chrome&Safari**/
+		-webkit-transform: translate(0,0);/**Opera**/
+		-moz-transform: translate(0,0);/**Firefox**/
+ 	}
+ 	.left-nav.open{
+ 		width: 14.66666667%;
+		transform:translate(0,0);/**Chrome&Safari**/
+		-webkit-transform: translate(0,0);/**Opera**/
+		-moz-transform: translate(0,0);/**Firefox**/
+ 	}
+ 	.hamburger{
+ 		display: none;
+ 	}
+   	.content {
      padding:1.5em 1%;
      float:right;
      width:83.33333333%;
      position: relative;
-   }
-   .content > .container {
+   	}
+   	.content > .container {
      width:auto;
-   }
-   .content-item {
+   	}
+   	.content-item {
      width:23%;
      margin:0 1% 25px;
-   }
- }
-  .item-box > img {
-   position:absolute;
-   height:100%;
-   width:auto;
-   top:0;
-   left:0;
-   right:0;
- }
- .item-box h2 {
-   font-family: 'Lato', Helvetica, Arial, sans-serif;
-   font-weight: 700;
-   font-size: 15px;
-   line-height: 17px;
-   margin:0;
- }
- .item-box h2 a {
-   color: #3498DB;
-   text-decoration: none;
- }
- .item-box h2 img {
-   width:16px;
-   height:16px;
-   position:relative;
-   top:2px;
-   margin-right:5px;
- }
- .item-box p {
-   font-size: 14px;
-   color: #333333;
-   line-height: 18px;
-   margin:5px 0 0;
- }
+   	}
+}
+
+	.item-box > img {
+	position:absolute;
+	height:100%;
+	width:auto;
+	top:0;
+	left:0;
+	right:0;
+	}
+	.item-box h2 {
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 17px;
+	margin:0;
+	}
+	.item-box h2 a {
+	color: #3498DB;
+	text-decoration: none;
+ 	}
+	.item-box h2 img {
+   	width:16px;
+   	height:16px;
+   	position:relative;
+   	top:2px;
+   	margin-right:5px;
+ 	}
+ 	.item-box p {
+   	font-size: 14px;
+   	color: #333333;
+   	line-height: 18px;
+   	margin:5px 0 0;
+ 	}
 
 
