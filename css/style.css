@@ -42,7 +42,6 @@
 	min-height: 1px;
 	margin: 0 2% 20px;
 	}
-	/* CP 31 Rework*/
 	.indent{
 		margin-top: 20px
 	}
@@ -71,7 +70,7 @@
 		width: 1170px;
 	}
 	}
-/* CP 30 Assignment - XL Media Query */
+/* XL Media Query */
 	@media (min-width: 2400px){
 	.container {
 		width: 2340px;
@@ -79,7 +78,7 @@
 	.one-fifth {
 		width:16%;
 	}
-/* CP30 Rework */
+
 	.h1-resize{
 		font-size: 4.1vw;
 	}
@@ -87,7 +86,7 @@
 		font-size: 1.88vw;
 		line-height: 2.22vw;
 	}
-/* End of CP30 Rework for <span> */
+
 	}
 /* HEADER */
 	header {
@@ -129,22 +128,17 @@
 	display: block;
 	position: relative;
 	}
-
-/* CP 30 Assignment - Text elements within the hero section 
-	-- start from 48px font size, I converted it in vw relative
-	to container width 1170.*/
 	header .hero h1 {
-	font-size: /*4.1vw*/48px; 
+	font-size: 48px; 
 	font-weight: normal;
 	margin: 95px 0 0;
 	}
 	header .hero p {
-	font-size: /*1.88vw*/22px; 
-	line-height: /*2.22vw*/26px;
+	font-size: 22px; 
+	line-height: 26px;
 	font-weight: 100;
 	margin:10px 0 40px;
 	}
-	/* END OF CP 30 Assignment - Text elements within the hero section */
 	header .hero img {
 	display: block;
 	margin: 3em auto 0;
@@ -171,7 +165,7 @@
 	}
 	.benefits ul{
 	margin: 0 auto;
-	padding: 3em 0 15em 0 /* 4em 0*/;
+	padding: 3em 0 15em 0;
 	}
 	.benefits ul li{
 	list-style-type: none;
@@ -193,7 +187,7 @@
 		background: url(../images/background.png) top center no-repeat, linear-gradient(206deg, #5F81A3 0%, #34495E 94%);
 		background-size: cover;
 		text-align: center;
-		padding: 2em 0/*4em 0*/;
+		padding: 2em 0;
 	}
 	.pricing h2, .pricing p{
 		color: #FFFFFF;
@@ -206,16 +200,16 @@
 		list-style-type: none;
 	}
 	.box {
-		padding: 0 15px 15px/*0 15px 15px*/;
+		padding: 0 15px 15px;
 		background: #FFFFFF;
 		box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
-		min-height: 400px/*439px*/;
+		min-height: 400px;
 		position: relative;
 		margin-top: 25px;
 		margin-bottom: 35px;
 	}
 	.box.middle {
-		min-height: 445px/*485px*/;
+		min-height: 445px;
 		margin-top: 0px;
 	}
 	.box h3{
@@ -228,13 +222,13 @@
 		right: 0;
 		top: 0;
 		text-align: center;
-		margin: 0 -15px 30px/*0 -15px 40px*/;
+		margin: 0 -15px 30px;
 		padding: 10px 0;
 	}
 	.box h4{
 		font-size: 40px;
 		font-weight: normal;
-		margin: 0 0 0 0 /*40px 0 10px*/;
+		margin: 0 0 0 0;
 		color: #3498DB;
 	}
 	.box h4 span{
@@ -268,11 +262,9 @@
 
 /* TESTIMONIALS */
 	.testimonials{
-		padding: 2em 0 /*4em 0*/;
+		padding: 2em 0;
 		text-align: center;
 		overflow: auto;
-		/*border: solid;
-		margin-bottom: 20em;*/
 
 	}
 	.testimonials h2{
@@ -289,7 +281,7 @@
 		position: relative;
 		padding: 30px;
 		width: auto;
-		margin: 30px 0 0 0/* 0 */;
+		margin: 30px 0 0 0;
 	}
 	.testimonials blockquote:after{
 		top:100%;
@@ -349,7 +341,6 @@ footer nav ul li {
    background-color: transparent;
  }
  footer .logo{
-   /*padding: 2.35em 0;*/
    margin: 0 auto;
    display: block;
  }
@@ -364,9 +355,6 @@ footer nav ul li {
      padding: 2em 0;
      text-align: left;
    }
-   /*footer .right-footer-block {
-     background-color: #3498DB;
-   }*/
    footer .logo{
      padding: 2em 0 2em 1.5em;
    }
@@ -465,7 +453,6 @@ footer nav ul li {
  .left-nav .items a:active{
  	color: red;
  }
- /*CP34 ASSIGNMENT*/
 .current-page{
  	background-color: #3498EE;
  }
@@ -509,10 +496,10 @@ footer nav ul li {
    width:98%;
    position: relative;
  }
-.content .container-top{/*not in default*/
+.content .container-top{
  	margin-bottom: 0em; 
  }
- .container-second{ /*not in default*/
+ .container-second{ 
  	margin-top: 0em;
  	clear: both;
  }
@@ -549,7 +536,7 @@ footer nav ul li {
  }
 
 .settings .dropit .dropit-submenu {
-    bottom: 100%; /* FOUND IT!!! */
+    bottom: 100%; 
     top: inherit;
 }
 
